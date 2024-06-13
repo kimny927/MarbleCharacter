@@ -8,6 +8,7 @@ plugins {
 android {
     namespace = "ny.marble.character"
     compileSdk = 34
+    ndkVersion = "27.0.11902837"
 
     defaultConfig {
         applicationId = "ny.marble.character"
@@ -38,6 +39,11 @@ android {
     buildFeatures {
         dataBinding = true
         viewBinding = true
+    }
+    externalNativeBuild {
+        cmake {
+            path("src/main/cpp/CMakeLists.txt")
+        }
     }
 }
 
