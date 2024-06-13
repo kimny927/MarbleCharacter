@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        if(savedInstanceState != null) {
+        if(savedInstanceState == null) {
             supportFragmentManager.commit {
                 add(R.id.first_frame, ContainerFragment.newInstanceWithInitialTab(Tab.SEARCH))
                 add(R.id.second_frame, ContainerFragment.newInstanceWithInitialTab(Tab.FAVORITE))
