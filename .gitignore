@@ -5,8 +5,8 @@
 # Covers files to be ignored for android development using Android Studio.
 
 # Marble Api key
-src/main/cpp/key.cpp
-.cxx/*
+app/src/main/cpp/key.cpp
+app/.cxx/*
 
 # Built application files
 *.apk
