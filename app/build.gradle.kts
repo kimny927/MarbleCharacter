@@ -8,6 +8,7 @@ plugins {
 android {
     namespace = "ny.marble.character"
     compileSdk = 34
+    ndkVersion = "27.0.11902837"
 
     defaultConfig {
         applicationId = "ny.marble.character"
@@ -39,6 +40,11 @@ android {
         dataBinding = true
         viewBinding = true
     }
+    externalNativeBuild {
+        cmake {
+            path("src/main/cpp/CMakeLists.txt")
+        }
+    }
 }
 
 dependencies {
@@ -64,6 +70,9 @@ dependencies {
 
     //glide
     implementation(libs.glide)
+
+    //timber
+    implementation(libs.timber)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

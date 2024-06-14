@@ -1,4 +1,4 @@
-package ny.marble.character
+package ny.marble.character.presentation.model
 
 data class CharacterCardModel(
     val id: Int,

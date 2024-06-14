@@ -4,6 +4,10 @@
 ### AndroidStudio ###
 # Covers files to be ignored for android development using Android Studio.
 
+# Marble Api key
+app/src/main/cpp/key.cpp
+app/.cxx/*
+
 # Built application files
 *.apk
 *.ap_
